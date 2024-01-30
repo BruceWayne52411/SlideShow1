@@ -15,8 +15,7 @@ console.log("js loaded")
 
 let imageUrls = [
     "./images/batman1.jpg",
-    "./images/batman2.jpg",
-    "./images/batman3.jpg"
+    "https://as2.ftcdn.net/v2/jpg/03/89/39/09/1000_F_389390965_lwqVX10TBdFH2WMBH6GGF8pcNiOhzfnb.jpg"
 ]
 
 const prevButton = document.getElementById("prev-button")
@@ -41,6 +40,7 @@ function updateImage(direction){
     } else if("prev"){
         currentIndexImage--;
     } else (currentIndexImage++)
+
     if (currentIndexImage >= imageUrls.length){
         currentIndexImage = 0;
     }
